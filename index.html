@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/server.js"></script>
+	<title>智家</title>
+</head>
+<body>
+	<div class="container">
+		<div class="st-container">
+
+			<input type="radio" name="side" id="home" checked="checked">
+			<a id="a-home" href="#st-panel-1"></a>
+				
+			<input type="radio" name="side" id="history">
+			<a id="a-history" href="#st-panel-2"></a>
+				
+			<input type="radio" name="side" id="advise">
+			<a id="a-advise" href="#st-panel-3"></a>
+				
+			<input type="button" name="" id="top">
+			<a id="a-top" href="#st-panel-1"></a>			
+
+			<div class="st-scroll">
+				<section class="st-panel" id="st-panel-1">
+					
+					<!-- 标题栏 -->
+					<div class="st-title">
+						<!-- LOGO -->
+						<div class="title-left" id="title-logo"></div>
+						<p class="title-left" id="title-text">SmartHome</p>
+						
+						<div class="title-right">
+							<div class="title-right" id="title-aboutus">关于我们</div>
+							<div class="title-right" id="title-detail">产品详细</div>
+							<div class="title-right" id="title-app">APP下载</div>
+						</div>
+					</div>
+
+					<!-- 副标题 -->
+					<div class="side-note" id="sn-rt">
+						<p id="rt-title">&nbsp;实时温湿度监测</p>
+					</div>
+					
+					<!-- 开关按钮-->
+					<div class="switch">
+						<input type="checkbox" id="swi-check">
+						<div id="swi-outer">
+							<div id="swi-inner">OFF</div>
+						</div>
+					</div>
+					
+					<!-- 中间分隔线 -->
+					<div id="centerline"></div>
+					
+					<!-- 温度显示 -->
+					<div id="show-temp">
+						<p id="temp-Chinese">温度</p>
+						<p id="temp-English">Temperature</p>
+						<div id="temp">
+							<div id="tempdata">30.2</div>
+							<div id="temp-symbol">℃</div>
+						</div>
+					</div>
+
+					<!-- 湿度显示 -->
+					<div id="show-humi">
+						<p id="humi-Chinese">湿度</p>
+						<p id="humi-English">Humidity</p>
+						<div id="humi">
+							<div id="humidata">75.3</div>
+							<div id="humi-symbol">%</div>
+						</div>
+					</div>
+
+				</section>
+
+				<section class="st-panel" id="st-panel-2">
+
+					<div class="side-note" id="sn-ht">
+						<p id="ht-title">&nbsp;历史数据查询</p>
+					</div>
+
+					<div class="timepicker">
+
+						<div id="from">
+							<p>FROM:</p>
+							<input type="datetime-local" id="time-begin">
+						</div>
+
+						<div id="to">
+							<p>TO:</p>
+							<input type="datetime-local" id="time-end">
+						</div>
+
+					</div>
+
+					<div class="list">
+						<div id="list-title">
+							<p class="title-text" id="title-temp">温度/Temperature</p>
+							<p class="title-text" id="title-humi">湿度/Humidity</p>
+							<p class="title-text" id="title-time">时间/Time</p>
+						</div>
+						
+						<div id="list-content">
+							<ul id="datalist"></ul>
+						</div>
+						
+					</div>
+
+				</section>
+
+				<section class="st-panel" id="st-panel-3">
+					
+					<div class="side-note" id="sn-ad">
+						<p id="ad-title">&nbsp;提醒建议</p>
+					</div>
+
+					<div class="advise-box">
+						<div class="advise" id="ad-CL"></div>
+						<div class="advise" id="ad-AC"></div>
+						<div class="advise" id="ad-HF"></div>
+					</div>
+
+					<div id="bottombar"></div>
+				</section>
+
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
